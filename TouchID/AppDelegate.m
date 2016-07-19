@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "TouchIDWindow.h"
 
 @interface AppDelegate ()
+@property (nonatomic, strong) TouchIDWindow *touchWindow;
 
 @end
 
@@ -16,6 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"didFinishLaunch");
+    
+    //step-1
+        self.touchWindow = [[TouchIDWindow alloc] initWithFrame:self.window.frame];
+        [self.touchWindow show];
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -31,6 +39,7 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+     [self.touchWindow show];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

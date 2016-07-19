@@ -15,6 +15,8 @@
 		73A365331D3EBB0800D137FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A365311D3EBB0800D137FA /* LaunchScreen.storyboard */; };
 		73A3653E1D3EBB0800D137FA /* TouchIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A3653D1D3EBB0800D137FA /* TouchIDTests.m */; };
 		73A365491D3EBB0800D137FA /* TouchIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A365481D3EBB0800D137FA /* TouchIDUITests.m */; };
+		73A365581D3EBE0F00D137FA /* TouchIDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A365571D3EBE0F00D137FA /* TouchIDWindow.m */; };
+		73A3655C1D3EC26F00D137FA /* myTouchID.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A3655B1D3EC26F00D137FA /* myTouchID.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		73A365441D3EBB0800D137FA /* TouchIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A365481D3EBB0800D137FA /* TouchIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDUITests.m; sourceTree = "<group>"; };
 		73A3654A1D3EBB0800D137FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73A365561D3EBE0F00D137FA /* TouchIDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDWindow.h; sourceTree = "<group>"; };
+		73A365571D3EBE0F00D137FA /* TouchIDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDWindow.m; sourceTree = "<group>"; };
+		73A3655B1D3EC26F00D137FA /* myTouchID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myTouchID.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		73A365171D3EBB0700D137FA = {
 			isa = PBXGroup;
 			children = (
+				73A3655B1D3EC26F00D137FA /* myTouchID.png */,
 				73A365221D3EBB0700D137FA /* TouchID */,
 				73A3653C1D3EBB0800D137FA /* TouchIDTests */,
 				73A365471D3EBB0800D137FA /* TouchIDUITests */,
@@ -103,6 +109,8 @@
 			children = (
 				73A365261D3EBB0800D137FA /* AppDelegate.h */,
 				73A365271D3EBB0800D137FA /* AppDelegate.m */,
+				73A365561D3EBE0F00D137FA /* TouchIDWindow.h */,
+				73A365571D3EBE0F00D137FA /* TouchIDWindow.m */,
 				73A365291D3EBB0800D137FA /* ViewController.h */,
 				73A3652A1D3EBB0800D137FA /* ViewController.m */,
 				73A3652C1D3EBB0800D137FA /* Main.storyboard */,
@@ -207,6 +215,7 @@
 				TargetAttributes = {
 					73A3651F1D3EBB0700D137FA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WV2TKNZMPG;
 					};
 					73A365381D3EBB0800D137FA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -245,6 +254,7 @@
 			files = (
 				73A365331D3EBB0800D137FA /* LaunchScreen.storyboard in Resources */,
 				73A365301D3EBB0800D137FA /* Assets.xcassets in Resources */,
+				73A3655C1D3EC26F00D137FA /* myTouchID.png in Resources */,
 				73A3652E1D3EBB0800D137FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +282,7 @@
 			files = (
 				73A3652B1D3EBB0800D137FA /* ViewController.m in Sources */,
 				73A365281D3EBB0800D137FA /* AppDelegate.m in Sources */,
+				73A365581D3EBE0F00D137FA /* TouchIDWindow.m in Sources */,
 				73A365251D3EBB0800D137FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = houjie.TouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = houjie.TouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +511,7 @@
 				73A3654F1D3EBB0800D137FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73A365501D3EBB0800D137FA /* Build configuration list for PBXNativeTarget "TouchIDTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +520,7 @@
 				73A365521D3EBB0800D137FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73A365531D3EBB0800D137FA /* Build configuration list for PBXNativeTarget "TouchIDUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +529,7 @@
 				73A365551D3EBB0800D137FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
