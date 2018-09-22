@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"hello Word");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
